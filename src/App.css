@@ -1,38 +1,68 @@
+/* src/App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.counter-box {
+  text-align: center;
+  position: relative;
+}
+
+.counter-button {
+  background-color: #4CAF50;
+  border: none;
   color: white;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.counter-button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+input {
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.ribbons {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  opacity: 0;
+}
+
+.reset-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.reset-icon {
+  width: 30px;
+  height: 30px;
 }
